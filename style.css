@@ -1,0 +1,6 @@
+.circle__one {
+    border: solid 1px black;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+}
