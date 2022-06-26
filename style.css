@@ -1,6 +1,59 @@
-.circle__one {
-    border: solid 1px black;
-    border-radius: 50px;
-    width: 60px;
-    height: 60px;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    background: hsl(27, 66%, 92%); 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header {
+    background: hsl(10, 79%, 65%);
+    width: 540px;
+    height: 125px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-left: 33px;
+}
+
+p {
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+figure img {
+    padding-right: 40px;
+    padding-top: 6px;
+}
+
+main {
+    background: white;
+    width: 540px;
+    height: 480px;
+    margin-top: 35px;
+    border-radius: 20px;
 }
