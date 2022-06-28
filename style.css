@@ -37,7 +37,7 @@ header {
 }
 
 p {
-    margin-bottom: 10px;
+    /**margin-bottom: 10px;*/
     font-weight: 200;
 }
 
@@ -53,7 +53,33 @@ figure img {
 main {
     background: white;
     width: 540px;
-    height: 480px;
-    margin-top: 35px;
+    height: 510px;
+    margin-top: 28px;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 2px hsl(28, 10%, 53%);
+    padding-top: 25px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+}
+
+h4 {
+    text-align: right;
 }
