@@ -83,3 +83,12 @@ h1 {
 h4 {
     text-align: right;
 }
+
+.odd {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__bar {
+    padding: 0 10px 0 10px;
+}
