@@ -1,5 +1,5 @@
-var oddContainer = document.querySelector(".odd__Container");
-console.log(oddContainer);
+// var oddContainer = document.querySelector("div.content__bar");
+// console.log(oddContainer);
 
 
 function nuevo() {
@@ -9,11 +9,27 @@ function nuevo() {
     })
    .then(response => response.json())
    .then(jsondata => {
-      const firstDay = document.querySelector(".firstDay");
-      firstDay.nodeValue = jsondata[3].day;
-      console.log(firstDay)
-      console.log(jsondata[3].day
-   )});
+      var oddContainer = document.querySelector("div.content__bar");
+      const p = document.createElement('p');
+      const div = document.createElement('div')
+      oddContainer.appendChild(div);
+      oddContainer.appendChild(p);
+      const month = document.createTextNode(jsondata[2].day);
+      p.appendChild(month)
+      div.style.height = (((jsondata[2].amount) * 200 / 100) + (jsondata[2].amount)) + 'px';
+      console.log((((jsondata[2].amount) * 200 / 100) + (jsondata[0].amount)))
+      console.log(jsondata.length)
+      /* for (let i = 0; i >= jsondata.length; i++ ) {
+         var oddContainer = document.querySelector("div.content__bar");
+         const p = document.createElement('p');
+         const div = document.createElement('div')
+         oddContainer.appendChild(div);
+         oddContainer.appendChild(p);
+         let month = document.createTextNode(jsondata[i].day);
+         p.appendChild(month)
+         div.style.height = (((jsondata[i].amount) * 150 / 100) + (jsondata[i].amount)) + 'px';
+      }*/
+   });
 }
 
 //      <div class="content__bar">

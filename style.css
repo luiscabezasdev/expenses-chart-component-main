@@ -84,11 +84,23 @@ h4 {
     text-align: right;
 }
 
-.odd {
+.odd__Container {
     display: flex;
     justify-content: space-between;
 }
 
 .content__bar {
     padding: 0 10px 0 10px;
+}
+.content__bar p {
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+.content__bar div {
+    width: 50px;
+    border-radius: 5px;
+    background: hsl(10, 79%, 65%);
+    text-align: center;
 }
